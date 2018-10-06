@@ -21,7 +21,7 @@ To every nodule 3D patch, we upsample it by using the following rule: (1) if the
 (3) if the nodule diameter is between 25mm and 50mm, we directly feed it into the model without upsampling.
 
 ### 2. GAN:
-For surrogate supervision task, the GAN model is trained using both the 784,241 FPR training patches and the 4,750 PR validation patches.
+For surrogate supervision task, the GAN model is trained using both the 784,241 FPR training patches and the 4,750 FPR validation patches. It is then tested on the 3,059 FPR testing patches.
 The preprocessing and upsampling follows the same methods adopted by FPR model.
 
 
