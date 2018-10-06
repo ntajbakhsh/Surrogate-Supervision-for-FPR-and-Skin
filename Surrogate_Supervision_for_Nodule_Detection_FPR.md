@@ -47,7 +47,8 @@ The learning rate started at 3e-4, then decreased by 10 times at training step o
 
 ### 2. GAN:
 Batch size is 64. Total number of training iterations is 96,000.
-Wasserstein loss [6] was selected because of its stability. 
+Wasserstein loss [6] was selected because of its stability.
+The dimension of the latent variables is 100.
 An Adam optimizer was used for configuring the learning rate with beta1 of 0.5 and beta2 of 0.99.
 The learning rate started at 2e-4. 
 
