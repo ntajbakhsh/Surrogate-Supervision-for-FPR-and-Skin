@@ -1,4 +1,4 @@
-# Surrogate Supervision for FPR for Nodule Detection
+# Surrogate Supervision for Nodule Detection FPR
 
 
 ## Data
