@@ -28,10 +28,10 @@ The preprocessing and upsampling follows the same methods adopted by FPR model.
 ## Architectures
 
 ### 1. FPR:
-![FPR Architecture](./images/FPR.png)
+![FPR Architecture](./FPR.png)
 
 ### 2. GAN:
-![GAN Architecture](./images/FPR_GN.png)
+![GAN Architecture](./FPR_GAN.png)
 
 This GAN model follows the same training and inference procedures as proposed in the original GAN paper [3].
 
@@ -66,7 +66,7 @@ and after 26,000 training steps, alpha4 was turned on;
 
 
 ## Results
-![FPR result](./images/FPR_result.png)
+![FPR result](./FPR_result.png)
 
 The performances of FPR models trained from scratch and pretrained from the discriminator of the surrogate supervision GAN model are shown above.
 These performances are measured in terms of FROC AuC (up to different false positives) and CPM scores.
