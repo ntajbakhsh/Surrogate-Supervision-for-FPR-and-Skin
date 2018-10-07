@@ -45,6 +45,8 @@ Batch size is 128. Total number of training iterations is 196,000.
 An SGD optimizer was used for configuring the learning rate.
 The learning rate started at 3e-4, then decreased by 10 times at training step of 120,000.
 
+The model was trained from scratch, pretrained from the discriminator of the surrogate supervision GAN model using 10%, 25%, 50%, and 100% of all the 784,241 3D training patches. There has been altogether 8 FPR models been trained.
+
 ### 2. GAN:
 Batch size is 64. Total number of training iterations is 96,000.
 Wasserstein loss [6] was selected because of its stability.
