@@ -63,7 +63,7 @@ The slope for gradually turning on these alphas is 0.002.
 After 5,000 training steps, alpha1 was turned on;
 after 12,000 training steps, alpha2 was turned on;
 after 19,000 training steps, alpha3 was turned on;
-and after 26,000 training steps, alpha4 was turned on;
+and after 26,000 training steps, alpha4 was turned on.
 
 
 ## Results
