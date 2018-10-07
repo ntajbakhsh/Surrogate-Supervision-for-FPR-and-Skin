@@ -54,6 +54,8 @@ An Adam optimizer was used for configuring the learning rate with beta1 of 0.5 a
 The learning rate started at 1e-4. Atrous rate is 6, 12, 18.
 The output stride for the resnet50-DeepLabV3+ is 16 and decoder output stride is 4.
 
+The model was trained from scratch, pretrained from the generator of the skin colorization model, and pretrained from ImageNet using 10%, 25%, 50%, and 100% of all the 1,435 training images. There has been altogether 12 skin segmentation models been trained.
+
 ### 2. Skin Colorization:
 Batch size is 4. Total number of training iterations is 76,000.
 LS GAN loss [4] was selected. 
