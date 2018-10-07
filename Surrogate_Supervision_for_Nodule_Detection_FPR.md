@@ -5,7 +5,7 @@
 
 ### 1. FPR:
 The task of FPR for nodule detection is to label each nodule candidate (3D patch) as either nodule or non-nodule.
-733, 95, and 190 CT series from LIDC dataset [1] were used for training, validation, and testing respectively.
+733, 95, and 190 CT series (<span style="color:red">190 CT series, why?</span>) from LIDC dataset [1] were used for training, validation, and testing respectively.
 A 3D faster RCNN model is then used to generate 3D candidates extracted from all these 1,018 CT series.
 These candidates are then combined with the false positive and ground truth 3D patches provided by LUNA16 challenge [2] to serve as training, validation, and testing data for FPR model.
 Finally, there are 784,241 3D patches used for training, 4,750 used for validation, and 3,059 used for testing.
@@ -15,7 +15,7 @@ Their values are then normalized into the range of -1 to 1.
 All 3D patches are resampled to the spacing of 1mm x 1mm x 1mm.
 Finally they are center cropped to the shape of 32 x 32 x 32 along z, y, and x axis.
 
-To alleviate the class-unbalancing problem, the ratio between non-nodule patches and nodule patches are kept to 8:1 when feeding the data to the FPR model during training.
+To alleviate the class imbalace problem, the ratio between non-nodule patches and nodule patches are kept to 8:1 when feeding the data to the FPR model during training.
 To every nodule 3D patch, we upsample it by using the following rule: (1) if the diameter of the nodule is smaller than 3mm, we abandon it;
 (2) if the nodule diameter is between 3mm and 25mm, we upsample it by 2 times;
 (3) if the nodule diameter is between 25mm and 50mm, we directly feed it into the model without upsampling.
