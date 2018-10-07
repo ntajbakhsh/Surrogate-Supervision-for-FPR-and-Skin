@@ -26,14 +26,14 @@ Each grayscale image is repeated 3 times along the depth to make its dimension s
 ## Architectures
 
 ### 1. Skin Segmentation:
-![Skin Segmentation Architecture](./images/resnet50_DeepLabV3Plus.png)
+![Skin Segmentation Architecture](./resnet50_DeepLabV3Plus.png)
 
 The skin segmentation model follows the DeepLabV3+ framework [1].
 The backbone is the ResNet 50 beta network with all details listed clearly at [DeepLabV3+ Github Home Page](https://github.com/tensorflow/models/tree/master/research/deeplab).
 
 
 ### 2. Skin Colorization:
-![cGAN Architecture](./images/discriminator_skin.png)
+![cGAN Architecture](./discriminator_skin.png)
 
 Only the architecture of the discriminator is shown here since
 the architecture of the generator is the same to that of the skin segmentation model except a different output dimension for the very last fully connected layer.
@@ -64,7 +64,7 @@ generator GAN loss and generator reconstruction loss is set to be 1.
 
 
 ## Results
-![skin result](./images/skin_results.png)
+![skin result](./skin_results.png)
 
 The performances of skin segmentation model trained from scratch,
 pretrained from the generator of the surrogate supervision cGAN model, and pretrained from ImageNet are shown above.
