@@ -1,5 +1,8 @@
 # Surrogate Supervision for Skin Segmentation
 
+Nima: I just shared with you a google slide document. Please take the 2nd slide and use the skin part of it in this page. I think it's not quite clear how skin segmentation model and colorization fit into the illustration of slide 2.
+
+Nima: You should explain why you need to down-scale input images prior to feeding them to the discriminator network. The reason is that deeplav v3 has an effective stride of 4.
 
 ## Data
 
